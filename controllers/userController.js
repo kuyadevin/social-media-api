@@ -34,7 +34,7 @@ module.exports = {
       { $set: req.body },
       { runValidators: true, new: true }
     )
-      .then((course) =>
+      .then((user) =>
         !user
           ? res.status(404).json({ message: "No user with this ID." })
           : res.json(user)
@@ -47,9 +47,13 @@ module.exports = {
       .then((user) =>
         !user
           ? res.status(404).json({ message: "No user with that ID" })
-          : Thoughts.deleteMany({ _id: { $in: user.thoughts } })
+          : Thought.deleteMany({ _id: { $in: user.thoughts } })
       )
       .then(() => res.json({ message: "User and thoughts deleted!" }))
       .catch((err) => res.status(500).json(err));
   },
+  // Add a new friend
+  addFriend(req, res) {},
+  //Remove friend
+  removeFriend(req, res) {},
 };
