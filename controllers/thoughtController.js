@@ -18,7 +18,7 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
-  // Create a new thought
+  // Create a new thought (need to push _id to the associated user's thoughts)
   createThought(req, res) {
     Thought.create(req.body)
       .then((thought) => res.json(thought))
@@ -26,5 +26,19 @@ module.exports = {
         console.log(err);
         return res.stauts(500).json(err);
       });
+  },
+  // Update a thought
+  updateThought(req, res) {
+    Thought.findOneAndUpdate(
+      { _id: req.params.thoughtId },
+      { $set: req.body },
+      { runValidators: true, new: true }
+    )
+      .then((thought) =>
+        !thought
+          ? res.status(404).json({ message: "No thought with this ID found" })
+          : res.json(thought)
+      )
+      .catch((err) => res.status(500).json(err));
   },
 };
