@@ -21,7 +21,13 @@ module.exports = {
   // Create a new thought (need to push _id to the associated user's thoughts)
   createThought(req, res) {
     Thought.create(req.body)
-      .then((thought) => res.json(thought))
+      .then((thought) => {
+        return User.findOneAndUpdate(
+          { _id: req.body.userId },
+          { $push: { thoughts: thought.Id } },
+          { new: true }
+        );
+      })
       .catch((err) => {
         console.log(err);
         return res.stauts(500).json(err);
