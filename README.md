@@ -9,9 +9,13 @@ This application is meant to be the backend-end for a online store that uses ORM
 ## Installation
 
 - To install this application, you want to copy the repository link from GitHub and doing a "git clone" followed by the copied link onto your system.
-- Next, you want to run the code to install all of you
-  `npm install`
-  followed by
+- Next, you want to run the code to install
+
+```
+npm install
+```
+
+followed by
 
 ```
 npm init
@@ -41,7 +45,7 @@ You will be prompted that the app is now listening, and you should be good to go
 
 ## Authors
 
-Made by Devin
+Made by Devin Nguyen
 
 - [Github](https://github.com/kuyadevin)
 - [LinkedIn](https://www.linkedin.com/in/devin-nguyen-9a0676212/)
