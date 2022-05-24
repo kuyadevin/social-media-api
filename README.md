@@ -4,7 +4,7 @@
 
 ## Description
 
-This application is meant to be the backend-end for a online store that uses ORM as well as Express.js to use Sequelize and interact with a MySQL database. With this application, you get view various models and interact with its contents.
+This application is meant to be the backend-end for a scoail media site where users can add friends, have thoughts, and respond to other's thoughts.
 
 ## Installation
 
