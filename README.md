@@ -43,6 +43,8 @@ You will be prompted that the app is now listening, and you should be good to go
 
 [Part Two](https://drive.google.com/file/d/1CEkAKr0BzKdPs5UdBHKoiL5l0fbRBqxi/view)
 
+[Part Three](https://drive.google.com/file/d/1KZJku-NsqOhtrPgoOxEHXnpO-X652-8P/view)
+
 ## Authors
 
 Made by Devin Nguyen
