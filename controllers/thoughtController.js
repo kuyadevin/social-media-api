@@ -62,10 +62,6 @@ module.exports = {
           : res.json(thought)
       )
       .catch((err) => res.status(500).json(err));
-    User.findByIdAndUpdate(
-      { _id: req.params.userId },
-      { $pull: { thoughts: { thoughtId: req.params.thoughtId } } }
-    ).catch((err) => res.status(500).json(err));
   },
   // Create a reaction
   createReaction(req, res) {
