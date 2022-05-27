@@ -4,7 +4,7 @@
 
 ## Description
 
-This application is meant to be the backend-end for a scoail media site where users can add friends, have thoughts, and respond to other's thoughts.
+This application is meant to be the backend-end for a social media site where users can add friends, have thoughts, and respond to other's thoughts.
 
 ## Installation
 
